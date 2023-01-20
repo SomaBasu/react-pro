@@ -22,8 +22,8 @@ const [register, setRegister] = useState(true);
 const onFormSubmit = async (event) => { 
     event.preventDefault();
 
-    const user = {name:name, password:password, dob:dob, gender:gender, phone:phone, email:email, pincode:pincode, city:city, state:state, country:country, usertype:"user"}
-    await axios.post("http://localhost:5000/posts", user).then((response) => {
+    const user = {name:name, password:password, dob:dob, gender:gender, phone:phone, email:email, pincode:pincode, city:city, state:state, country:country}
+    await axios.post("http://localhost:8081/api/users", user).then((response) => {
             if(response){
                 setPost(response.data)
                 console.log(response.data);
