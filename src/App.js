@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './css/style.css';
+import NavBar from './components/layout/NavBar';
+import FooterBar from './components/layout/FooterBar';
+import Home from './components/home/Home';
+import CoachRegistration from './components/coach/CoachRegistration';
+import CoachLogin from './components/coach/CoachLogin';
+import CoachHome from './components/coach/CoachHome';
+import UserRegistration from './components/user/UserRegistration';
+import UserLogin from './components/user/UserLogin';
+import UserHome from './components/user/UserHome';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <NavBar/>
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/coachsignup" element={<CoachRegistration/>} />
+          <Route exact path="/coachlogin" element={<CoachLogin/>} />
+          <Route exact path="/coachhome" element={<CoachHome/>} />
+          <Route exact path="/usersignup" element={<UserRegistration/>} />
+          <Route exact path="/userlogin" element={<UserLogin/>} />
+          <Route exact path="/userhome" element={<UserHome/>} />
+          
+        </Routes>
+        <FooterBar/>
+      </div>
+
+    </Router>
   );
 }
 
