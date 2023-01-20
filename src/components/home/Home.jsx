@@ -2,9 +2,12 @@ import React from 'react'
 import { Outlet, Link } from "react-router-dom";
 import coachImg from '../../images/coach.png'
 import userImg from '../../images/woman.png'
+import { NavBar } from '../layout/NavBar';
 
 function Home() {
   return (
+    <>
+    <NavBar />
     <section className='wc-section'>
         <div className="container">
             <div className="row section-title">
@@ -25,8 +28,8 @@ function Home() {
                 <div className="col-md-3">                    
                     <div className="card card-column">
                         <img src={userImg} className="card-img-top photo" alt="..." />
-                        <div className="card-body d-flex flex-column gap-3">                            
-                            <a href="#" className="btn btn-sky mb-3">Login as a User</a>
+                        <div className="card-body d-flex flex-column gap-3">
+                            <Link className="btn btn-sky" to="/userlogin">Login as a User</Link>
                             <Link className="btn btn-sky" to="/usersignup">Join as a User</Link>
                         </div>
                     </div>
@@ -34,6 +37,7 @@ function Home() {
             </div>
         </div>
     </section>
+    </>
   )
 }
 

@@ -29,7 +29,11 @@ const onFormSubmit = async (event) => {
         setPost(response.data);
         console.log("sss", post);
         if(response.data){
-            navigate({ pathname: '/coachhome'});
+            navigate('/coachhome',{
+                state:{
+                    userType: 'coach'
+                }
+            });
         }
     });
     props.dispatch(loginCoach(coach)); 

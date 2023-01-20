@@ -40,7 +40,7 @@ const onFormSubmit = async (event) => {
         return;
     }
 
-    const user = { name: name, password:password, dob:dob, gender:gender, phone:phone, speciality:speciality}   
+    const user = { name: name, password:password, dob:dob, gender:gender, phone:phone, speciality:speciality, usertype:"coach"}   
     await axios.post("http://localhost:5000/posts", user).then((response) => {
             if(response){
                 setPost(response.data)

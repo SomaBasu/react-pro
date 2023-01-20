@@ -88,3 +88,17 @@ label{
 .signup-text h5{
     font-size: 2rem;
 }
+.card-column-user{
+    background-color: #fff ;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2.5rem;
+}
+.body-text {
+    color: #000;
+}
+.photo1{
+    border-radius: 50%;
+    width: 1450px;
+    margin: auto;
+}

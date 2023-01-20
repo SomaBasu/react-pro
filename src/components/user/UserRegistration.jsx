@@ -22,7 +22,7 @@ const [register, setRegister] = useState(true);
 const onFormSubmit = async (event) => { 
     event.preventDefault();
 
-    const user = {name:name, password:password, dob:dob, gender:gender, phone:phone, email:email, pincode:pincode, city:city, state:state, country:country}
+    const user = {name:name, password:password, dob:dob, gender:gender, phone:phone, email:email, pincode:pincode, city:city, state:state, country:country, usertype:"user"}
     await axios.post("http://localhost:5000/posts", user).then((response) => {
             if(response){
                 setPost(response.data)
@@ -43,7 +43,7 @@ const onFormSubmit = async (event) => {
                     <div className="card card-column"> 
                         <div className='d-flex mx-auto gap-3 intro-text'>
                             <img src={userImg} className="card-img-top intro-photo" alt="..." />  
-                            <h2>Life Coach Profile</h2>    
+                            <h2>User Profile</h2>    
                         </div>                                    
                         <div className="card-body">
                             <div className="row">

@@ -15,8 +15,7 @@ import UserHome from './components/user/UserHome';
 function App() {
   return (
     <Router>
-      <div>
-        <NavBar/>
+      <div>        
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/coachsignup" element={<CoachRegistration/>} />
@@ -24,8 +23,7 @@ function App() {
           <Route exact path="/coachhome" element={<CoachHome/>} />
           <Route exact path="/usersignup" element={<UserRegistration/>} />
           <Route exact path="/userlogin" element={<UserLogin/>} />
-          <Route exact path="/userhome" element={<UserHome/>} />
-          
+          <Route exact path="/userhome" element={<UserHome/>} />          
         </Routes>
         <FooterBar/>
       </div>
