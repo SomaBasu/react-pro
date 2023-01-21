@@ -3,9 +3,11 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import { registerUser } from '../../action';
+
 import userImg from '../../images/woman.png';
 
 function UserRegistration(props) {
+
 const [name, setName] = useState("");
 const [password, setPassword] = useState("");
 const [dob, setDob] = useState("");
@@ -23,7 +25,8 @@ const onFormSubmit = async (event) => {
     event.preventDefault();
 
     const user = {name:name, password:password, dob:dob, gender:gender, phone:phone, email:email, pincode:pincode, city:city, state:state, country:country}
-    await axios.post("http://localhost:8081/api/users", user).then((response) => {
+    //await axios.post("http://localhost:8081/api/users", user).then((response) => {
+    await axios.post("http://localhost:3000/users", user).then((response) => {
             if(response){
                 setPost(response.data)
                 console.log(response.data);

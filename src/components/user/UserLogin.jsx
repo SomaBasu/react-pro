@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import { loginUser } from '../../action';
+//import {store} from '../../store';
 import userImg from '../../images/woman.png'
 
 function UserLogin(props) {
@@ -10,6 +11,9 @@ function UserLogin(props) {
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
     const [post, setPost] = useState("");
+
+    const userState = props.userState;
+    console.log(props.userState, "123ffff");
 
     const navigate = useNavigate();
 
@@ -84,4 +88,12 @@ function UserLogin(props) {
     )
 }
 
-export default connect()(UserLogin)
+const mapStateToProps = (state) => {
+    console.log(state,"map12");  
+    return {        
+      userState: state.login,
+      isAuthenticated: state.login.isAuthenticated  
+    }  
+  }
+
+export default connect(mapStateToProps)(UserLogin)
