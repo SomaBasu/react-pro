@@ -40,30 +40,16 @@ const onFormSubmit = async (event) => {
         return;
     }
 
-    const user = { name: name, password:password, dob:dob, gender:gender, phone:phone, speciality:speciality, usertype:"coach"}   
-    await axios.post("http://localhost:5000/posts", user).then((response) => {
+    const coach = { name: name, password:password, dob:dob, gender:gender, phone:phone, speciality:speciality}   
+    await axios.post("http://localhost:3000/coachs", coach).then((response) => {
             if(response){
                 setPost(response.data)
                 setRegister(false)
             }
       });
-    props.dispatch(registerCoach(user));       
+    props.dispatch(registerCoach(coach));       
 }
 
-// const getPost = async () =>{
-//     await axios.get("http://localhost:5000/posts").then((response) => {
-//         if(response.data){
-//             setPost(response.data)
-//         }
-//       });
-// }
-
-
-// React.useEffect(() => {
-//     getPost()
-// }, []);
-
-/* console.log("test ",post); */
   return (
     <>
     { register?

@@ -11,6 +11,7 @@ import CoachHome from './components/coach/CoachHome';
 import UserRegistration from './components/user/UserRegistration';
 import UserLogin from './components/user/UserLogin';
 import UserHome from './components/user/UserHome';
+import View from './components/user/View';
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
           <Route exact path="/coachhome" element={<CoachHome/>} />
           <Route exact path="/usersignup" element={<UserRegistration/>} />
           <Route exact path="/userlogin" element={<UserLogin/>} />
-          <Route exact path="/userhome" element={<UserHome/>} />          
+          <Route exact path="/userhome" element={<UserHome/>} />  
+          <Route exact path="/userviewprofile" element={<View/>} />  
+                
         </Routes>
         <FooterBar/>
       </div>

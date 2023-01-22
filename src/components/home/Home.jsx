@@ -30,7 +30,8 @@ function Home() {
                         <img src={userImg} className="card-img-top photo" alt="..." />
                         <div className="card-body d-flex flex-column gap-3">
                             <Link className="btn btn-sky" to="/userlogin">Login as a User</Link>
-                            <Link className="btn btn-sky" to="/usersignup">Join as a User</Link>
+                            <Link className="btn btn-sky" to="/usersignup" state={{userType: 'user'}}>Join as a User</Link>
+                           {/*  <Link className="btn btn-sky" to={{pathname: '/usersignup', state: {userType: 'user'}}} >Join as a User</Link>  */} 
                         </div>
                     </div>
                 </div>

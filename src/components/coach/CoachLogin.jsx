@@ -25,13 +25,14 @@ const onFormSubmit = async (event) => {
     }
 
     const coach = {coachId:coachId, password:password};
-    await axios.post("http://localhost:5000/comments", coach).then((response) => {
+    await axios.post("http://localhost:3000/users", coach).then((response) => {
         setPost(response.data);
-        console.log("sss", post);
+        console.log("sss", response.data);
         if(response.data){
             navigate('/coachhome',{
                 state:{
-                    userType: 'coach'
+                    userType: 'coach',
+                    coachId: response.data.coachId
                 }
             });
         }

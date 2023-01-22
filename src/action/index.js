@@ -4,7 +4,7 @@ const LOGIN_COACH = 'LOGIN_COACH';
 const REGISTER_USER = 'REGISTER_USER';
 const LOGIN_USER = 'LOGIN_USER';
 
-const LOGIN = 'LOGIN';
+const BOOKING_APPOINTMENT = 'BOOKING_APPOINTMENT';
 
 export const registerCoach = (data) => ({
   type: REGISTER_COACH,
@@ -26,7 +26,7 @@ export const loginUser = (data) => ({
   payload: data
 })
 
-export const login = (data) => ({
-  type: LOGIN,
+export const bookAppointment = (data) => ({
+  type: BOOKING_APPOINTMENT,
   payload: data
 })

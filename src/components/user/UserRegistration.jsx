@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import { registerUser } from '../../action';
-
+import { UserNavBar } from '../layout/NavBar';
 import userImg from '../../images/woman.png';
 
 function UserRegistration(props) {
+
 
 const [name, setName] = useState("");
 const [password, setPassword] = useState("");
@@ -28,8 +29,7 @@ const onFormSubmit = async (event) => {
     //await axios.post("http://localhost:8081/api/users", user).then((response) => {
     await axios.post("http://localhost:3000/users", user).then((response) => {
             if(response){
-                setPost(response.data)
-                console.log(response.data);
+                setPost(response.data)                
                 setRegister(false)
             }
       });
@@ -38,6 +38,7 @@ const onFormSubmit = async (event) => {
 
   return (
     <>
+    {state.userType == 'user' && <UserNavBar/>}
     { register?
     <section className="wc-section">
         <div className="container">

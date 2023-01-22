@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import coach from './coach';
 import user from './user';
-import login from './loginstate';
+import booking from './booking';
 
 const rootReducer = combineReducers({
   coach,
   user,
-  login
+  booking
 })
 
 export default rootReducer;

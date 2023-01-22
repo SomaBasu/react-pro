@@ -12,8 +12,8 @@ function UserLogin(props) {
     const [password, setPassword] = useState("");
     const [post, setPost] = useState("");
 
-    const userState = props.userState;
-    console.log(props.userState, "123ffff");
+    /* const userState = props.userState;
+    console.log(props.userState, "123ffff"); */
 
     const navigate = useNavigate();
 
@@ -29,14 +29,15 @@ function UserLogin(props) {
         }
 
         const user = { userId: userId, password: password };
-        await axios.post("http://localhost:5000/comments", user).then((response) => {
+        await axios.post("http://localhost:3000/users", user).then((response) => {
             setPost(response.data);
-            console.log("sss", post);
+            //console.log("sss", post);
             if (response.data) {
                 navigate('/userhome',
                     {
                         state: {
-                            userType: 'user'
+                            userType: 'user',
+                            userId: response.data.userId
                         }
                     }
                 );
@@ -89,10 +90,10 @@ function UserLogin(props) {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state,"map12");  
+    //console.log(state,"map12");  
     return {        
-      userState: state.login,
-      isAuthenticated: state.login.isAuthenticated  
+      //userState: state.login,
+      //isAuthenticated: state.login.isAuthenticated  
     }  
   }
 
