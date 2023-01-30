@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "name": "Soma Basu",
+      "password": "12345",
+      "dob": "2023-01-30",
+      "gender": "female",
+      "phone": "7980411163",
+      "email": "basu@gmail.com",
+      "pincode": "700126",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "id": 1
+    }
+  ],
+  "coachs": [
+    {
+      "name": "Raj",
+      "password": "12345",
+      "dob": "2023-01-30",
+      "gender": "male",
+      "phone": "+91 798 041 1163",
+      "speciality": "Sport",
+      "id": 1
+    },
+    {
+      "name": "Tom",
+      "password": "12345",
+      "dob": "2023-01-26",
+      "gender": "male",
+      "phone": "7980411163",
+      "speciality": "Football",
+      "id": 2
+    }
+  ],
+  "booking": [
+    {
+      "slot": "9 AM to 10 AM",
+      "doa": "2023-01-02",
+      "coachId": 1,
+      "userId": "2",
+      "id": 1
+    },
+    {
+      "slot": "2 PM to 3 PM",
+      "doa": "2023-01-07",
+      "coachId": 2,
+      "userId": "2",
+      "id": 2
+    },
+    {
+      "slot": "2 PM to 3 PM",
+      "doa": "2023-01-07",
+      "coachId": 2,
+      "userId": "2",
+      "id": 3
+    },
+    {
+      "slot": "",
+      "doa": "",
+      "coachId": 1,
+      "userId": "2",
+      "id": 4
+    }
+  ],
+  "userlogin": [
+    {
+      "userId": "1",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 5
+    }
+  ],
+  "coachlogin": [
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 1
+    }
+  ]
+}

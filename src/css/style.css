@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+html{
+    font-size: 62.5%;
+}
+.wecare-logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.main-menu{
+    font-size: 1.5rem;
+}
+.main-menu li{
+    padding: 0 1rem;
+}
+.wc-section{
+    padding: 5rem 0;
+}
+.intro-text h2{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+}
+.card-column{
+    background-color: #1C2833 ;
+    border-radius: 5px;    
+    padding: 2.5rem;
+}
+.card-image{
+    width: 150px;
+    margin: auto;
+    padding-bottom: 2.5rem;
+}
+.btn-sky{
+    background-color: #85C1E9;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.btn-sky:hover {
+    background-color: #85C1E9;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Coach Component */
+.wc-section-registration{
+    padding: 6rem 0;
+}
+.intro-text-registration h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.intro-photo{
+    width: 40px;
+    height: 40px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 6px 0;
+    box-sizing: border-box;
+}
+input[type=date] {
+    width: 100%;
+    padding: 6px 0;
+    box-sizing: border-box;
+}
+input[type=password] {
+    width: 100%;
+    padding: 6px 0;
+    box-sizing: border-box;
+}
+label{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Thank you section */
+.image-signup{
+    width: 250px;
+    padding-bottom: 2rem;
+}
+
+.photo{
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+}
