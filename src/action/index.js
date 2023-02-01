@@ -5,6 +5,7 @@ const REGISTER_COACH = 'REGISTER_COACH';
 const LOGIN_COACH = 'LOGIN_COACH';
 
 const BOOKING_APPOINTMENT = 'BOOKING_APPOINTMENT';
+/* const DELETE_APPOINTMENT = 'DELETE_APPOINTMENT'; */
 
 export const registerUser = (data) => ({
   type: REGISTER_USER,
@@ -30,3 +31,8 @@ export const bookAppointment = (data) => ({
   type: BOOKING_APPOINTMENT,
   payload: data
 })
+
+/* export const rescheduleAppointment = (data) => ({
+  type: DELETE_APPOINTMENT,
+  payload: data
+}) */

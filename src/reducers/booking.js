@@ -7,10 +7,10 @@ const user = (state=initialState,action)=>{
             return {
                 data:[...state.data,action.payload]
             }  
-      /*   case 'LOGIN_COACH':
+        /* case 'RESCHEDULE_APPOINTMENT':
             return {
                 data:[...state.data,action.payload]
-            } */      
+            }    */  
         default:
             return state;
     }

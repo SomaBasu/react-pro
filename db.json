@@ -32,38 +32,18 @@
       "phone": "7980411163",
       "speciality": "Football",
       "id": 2
-    }
-  ],
-  "booking": [
-    {
-      "slot": "9 AM to 10 AM",
-      "doa": "2023-01-02",
-      "coachId": 1,
-      "userId": "2",
-      "id": 1
     },
     {
-      "slot": "2 PM to 3 PM",
-      "doa": "2023-01-07",
-      "coachId": 2,
-      "userId": "2",
-      "id": 2
-    },
-    {
-      "slot": "2 PM to 3 PM",
-      "doa": "2023-01-07",
-      "coachId": 2,
-      "userId": "2",
+      "name": "Jeff",
+      "password": "12345",
+      "dob": "2023-01-02",
+      "gender": "male",
+      "phone": "9748076617",
+      "speciality": "Sport",
       "id": 3
-    },
-    {
-      "slot": "",
-      "doa": "",
-      "coachId": 1,
-      "userId": "2",
-      "id": 4
     }
   ],
+  "booking": [],
   "userlogin": [
     {
       "userId": "1",
@@ -89,6 +69,56 @@
       "userId": "1",
       "password": "12345",
       "id": 5
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 7
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 10
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 11
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 12
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 13
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 15
     }
   ],
   "coachlogin": [

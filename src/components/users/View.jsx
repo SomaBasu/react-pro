@@ -37,7 +37,7 @@ useEffect(()=>{
                     <h5>Date of Birth: {user.dob}</h5>
                     <h5>Email ID: {user.email}</h5>
                     <h5>Mobile No: {user.phone}</h5>                      
-                    <h5>Address: {user.address}</h5>                      
+                    <h5>Address: {user.city}, {user.state}, {user.country}</h5>                      
                     <h5>PinCode: {user.pincode}</h5>                      
                 </div>
             </div>
