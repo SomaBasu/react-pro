@@ -28,8 +28,11 @@ const onFormSubmit = async (event) => {
     const coach = {coachId:coachId, password:password};
     await axios.post("http://localhost:3000/coachlogin", coach).then((response) => {
         setPost(response.data);
-        console.log("sss", response.data);
+        //console.log("sss", response.data);
         if(response.data){
+            localStorage.setItem("id", response.data.coachId);
+            localStorage.setItem("userType", "coach");
+            setPost(response.data);
             navigate('/coachhome');
         }
     });

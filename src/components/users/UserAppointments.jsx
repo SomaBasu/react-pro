@@ -16,12 +16,12 @@ function UserAppointments(props) {
     const [isRescheduling,setIsRescheduling] = useState(false);
     const [bookApp, setBookApp] = useState(false);
 
-    console.log(editBooking,'edv');
+    //console.log(editBooking,'edv');
 
     const getAllAppoinment = () => {
         axios.get("http://localhost:3000/booking").then((response) => {
           if(response){
-            let value = response.data;
+            let value = response.data;        
             let result =  value.filter(val => val.userId === userId)
             console.log(result);
             setAppointment(result)
@@ -31,7 +31,7 @@ function UserAppointments(props) {
 
     useEffect(()=>{
         getAllAppoinment()
-    },[appointment])
+    },[])
 
 
     const rescheduleAppointment = (id) => {    
@@ -194,8 +194,6 @@ function UserAppointments(props) {
                             </div>
                         </div> 
                     ))
-
-
                 }              
             </div>
         </div>

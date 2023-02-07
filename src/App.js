@@ -11,6 +11,7 @@ import UserLogin from './components/users/UserLogin';
 import UserHome from './components/users/UserHome';
 import View from './components/users/View';
 import UserAppointments from './components/users/UserAppointments';
+import ViewCoach from './components/coach/ViewCoach';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/userhome" element={<UserHome/>} />
           <Route exact path="/userviewprofile" element={<View/>} />
           <Route exact path="/userappointments" element={<UserAppointments/>} />
+          <Route exact path="/coachviewprofile" element={<ViewCoach/>} />
         </Routes>
         <FooterNavBar/>       
       </div>
