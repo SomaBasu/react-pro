@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { UserHeaderNavBar } from '../layout/HeaderNavBar'
+import { computeHeadingLevel } from '@testing-library/react';
 
 function UserAppointments(props) {
     const userId = localStorage.getItem("id"); 
@@ -21,7 +22,8 @@ function UserAppointments(props) {
     const getAllAppoinment = () => {
         axios.get("http://localhost:3000/booking").then((response) => {
           if(response){
-            let value = response.data;        
+            let value = response.data;  
+           // console.log(value, 'userdt');      
             let result =  value.filter(val => val.userId === userId)
             console.log(result);
             setAppointment(result)
@@ -61,8 +63,12 @@ function UserAppointments(props) {
 
     const cancelAppointment = (appointmentId) => {   
         console.log(appointmentId, 'de')     
-        axios.delete(`http://localhost:3000/booking/${appointmentId}`)        
+        axios.delete(`http://localhost:3000/booking/${appointmentId}`).then((response) => {   
+            getAllAppoinment()
+        })  
     }
+
+   
 
       if(bookApp){
         return(

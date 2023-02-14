@@ -22,6 +22,7 @@ function App() {
           <Route exact path="/coachsignup" element={<CoachRegistration/>} />
           <Route exact path="/coachlogin" element={<CoachLogin/>} />
           <Route exact path="/coachhome" element={<CoachHome/>} />
+          <Route exact path="/coachschedules" element={<CoachHome/>} />
           <Route exact path="/usersignup" element={<UserRegistration/>} />
           <Route exact path="/userlogin" element={<UserLogin/>} />
           <Route exact path="/userhome" element={<UserHome/>} />

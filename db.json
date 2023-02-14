@@ -53,17 +53,10 @@
     },
     {
       "slot": "2 PM to 3 PM",
-      "doa": "2023-02-08",
-      "coachId": 2,
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "slot": "4 Pm to 5 PM",
-      "doa": "2023-02-10",
+      "doa": "2023-02-14",
       "coachId": 3,
       "userId": "1",
-      "id": 3
+      "id": 2
     }
   ],
   "userlogin": [
@@ -146,6 +139,36 @@
       "userId": "1",
       "password": "12345",
       "id": 16
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 17
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 18
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 19
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 20
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 21
+    },
+    {
+      "userId": "1",
+      "password": "12345",
+      "id": 22
     }
   ],
   "coachlogin": [
@@ -203,6 +226,36 @@
       "coachId": "2",
       "password": "12345",
       "id": 11
+    },
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 12
+    },
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 13
+    },
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 14
+    },
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 15
+    },
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 16
+    },
+    {
+      "coachId": "1",
+      "password": "12345",
+      "id": 17
     }
   ]
 }
